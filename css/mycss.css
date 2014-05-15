@@ -1,0 +1,366 @@
+ /* Forms Project Final Version .. Andrew Willhoit  .. 11/5/13 */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+		background-color: lightblue;		
+		font-family: "Courier New", Courier, monospace;
+		font-size: 1.18em;
+	}
+
+.clear {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	clear: both;
+}
+
+
+.inline {
+	display: inline;
+}
+
+#page {
+	margin: auto;
+	width: 850px;
+	position: relative;
+	background-color: ivory;
+	padding: 1em;
+	padding-top: .1em;
+	border-radius: 2px;	
+}
+
+h3 {
+	text-align: left;
+	color: #1676b3;
+	font-size: 1.2em;
+}
+
+div.topper {
+	border-bottom: 1px solid #1676b3;
+	margin-bottom: 5px;
+	margin-right: 65px;
+
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+#content {
+	background-color: ivory;
+}
+
+
+/*  HEADER  */
+#header {
+	height: 60px;
+	background: #1676b3 url(custom-themeV3/images/ui-bg_fine-grain_75_1676b3_60x60.png) 50% 50% repeat;
+	background-color: #1676b3;
+	margin-top: 1em;
+	/*border-radius: 2px;*/
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+#header h1 {
+	text-align: center;
+	padding-top: .1em;
+	font-size: 3em;
+}
+
+#tabs {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+li {
+	font-family: "Courier New", Courier, monospace;
+
+	font-size: .9em;
+}
+
+/*  FORMS  */
+
+input[type=text],
+input[type=password] {
+
+	border-radius: 2px; 
+	border: 1px solid #1676b3; 
+    padding: 2px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 10px 10px 0;
+
+    font-family: Chicago, sans-serif;
+    font-size: 1em;
+}
+
+#submit {
+	border: 1px solid #1676b3; 
+	background: rgba(255,255,255,0.5);
+}
+
+#lastName {
+	width: 9em;
+}
+
+#firstName {
+	width: 7em;
+}
+
+#middleInitial {
+	width: 1.5em;
+}
+
+#streetAddress {
+	width:16em;
+}
+
+#unitNumber {
+	width: 2em;
+}
+
+.schoolAddress {
+	width: 16em;
+}
+
+.city {
+	width: 7em;
+}
+
+.state {
+	font-size: .85em;
+    border-radius: 2px; 
+    border: 1px solid #1676b3;
+	background: rgba(255,255,255,0.5);
+}
+
+.zip {
+	width: 3.2em;
+}
+
+.phone {
+	width: 7.9em;
+}
+
+#email {
+	width: 17em;
+}
+
+#dateAvailable {
+	width:6em;
+}
+
+#socSec {
+	width: 9em;
+}
+
+#position {
+	width: 7em;
+}
+
+.salary {
+	width: 7em;
+}
+
+.radButt {
+	display: inline;
+}
+
+
+#citizenRadio, #workedRadio{
+	padding-left: 4.0em;
+}
+
+#felonyRadio {
+	padding-left: 2.6em;
+}
+
+.radButt > .label {
+	border-style: none;
+	margin: 0 10px 10px 0;
+}
+
+.from {
+	width:6em;
+}
+
+.to {
+	width:6em;
+} 
+
+#explainFelony , #explainDC {
+	border-radius: 2px; 
+	border: 1px solid #1676b3; 
+    padding: 4px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 10px 10px 0;
+    font-family: Chicago, sans-serif;
+    font-size: 1em;
+}
+
+
+/*EDUCATION AND REFERENCES TAB*/
+
+.school {
+	width: 9em;
+}
+
+
+.degree {
+	/*display: none;*/
+}
+
+/*Education & References tab container*/
+
+#hsDiploma, #collegeDegree, #gradDegree {
+	width: 29.5em;
+}
+
+.relationship {
+	width:9.1em;
+}
+
+.refCompany {
+	width: 16.5em;
+}
+
+.refAddress {
+	width: 29.4em;
+}
+
+#comp1, #comp2 {
+	width: 16em;
+}
+
+
+.supervisor {
+	width: 10.6em;
+}
+
+
+.jobTitle {
+	width: 27.9em;
+}
+
+#comp1SSalary, #comp2SSalary, #comp1ESalary, #comp2ESalary {
+	width: 9.52em;
+}
+
+.respons {
+	width: 24.5em;
+}
+
+.reason {
+	width: 23.5em;
+}
+
+#milBranch {
+	width: 11em;
+}
+
+#rank {
+	width: 24.4em;
+}
+
+#discharge {
+	font-size: .85em;
+
+    border-radius: 2px; 
+    border: 1px solid #1676b3;
+	background: rgba(255,255,255,0.5);
+}
+
+
+
+
+.ui-button {
+	
+	margin: 0;
+	padding: 0;
+    /*border: 1px solid red;*/
+
+}
+
+.ui-button-text-only {
+	/*height: 1.3em;*/	
+	/*border: 1px solid red;*/  
+}
+
+
+.ui-button-text {
+    font-size: .63em;
+    border-radius: 2px; 
+    border: 1px solid #1676b3;
+	background: rgba(255,255,255,0.5);
+	color: #121025;
+	/*margin: -1px -1px;*/
+}
+
+
+/*  FORM LABELS  */
+
+label {
+	font-size: .8em;
+	font-family:  "Courier New", Courier, monospace;
+
+}
+
+
+/*  FOOTER  */
+
+#footer {
+	text-align: center;
+
+}
+
+.leftDiv {
+    float: left;
+    margin-right: 8px;
+    /*width: 100px;*/
+    /*height: 20px;*/  
+    /*background-color: linen;*/
+}
+
+.rightDiv {
+    /*margin-left: 108px;*/
+   /* background-color: lime;*/
+}​​
+
+div#errorTotal {
+	padding-left: 1px;
+	margin-left: 1px;
+}
+
+div#errorTotal  {
+	text-align: center;
+}
+
+div#dialog {
+	padding: 1em;
+}
+
+
+
+
+/*VALIDATION STUFF*/
+
+#jobForm .indent label.error {
+  margin-left: 0;
+}
+#jobForm label.error {
+  font-size: 0.7em;
+  color: #F00;
+  font-weight: bold;
+  display: block;
+  margin-left: 15px;
+}
+
+#jobForm  input.error, #jobForm select.error  {
+  background: #FFA9B8;
+  border: 1px solid red;
+}
+
+
+/*FIN*/

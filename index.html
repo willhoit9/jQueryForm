@@ -1,0 +1,873 @@
+<!-- Forms Project Final Version .. Andrew Willhoit  .. 11/5/13 --> 
+
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>Apply Here!</title>
+	<link href="css/custom-themeV3/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src= "js/jquery.validate.min.js"></script>
+	<script src= "js/additional-methods.js"></script>
+	<script src="js/myjquery.js"></script>
+	<link href="css/mycss.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<div id="page">
+		<div id ="header">
+			<h1>Andrew Corp.</h1>	
+		</div> <!-- End of header -->
+
+		<div id="content">
+			<form action="pages/process.html" method="post" name="jobForm" id="jobForm">
+				<div id="tabs">
+					<ul>
+						<li><a href="#tabs-1">Applicant Information</a></li>
+						<li id="tab2"><a href="#tabs-2">Education & References</a></li>
+						<li><a href="#tabs-3">Previous Experience </a></li>
+					</ul>
+					
+					<!-- TAB ONE -->
+
+					<div id="tabs-1" class="tabForm">
+					
+						<div class="topper">
+							<h3>Job Application</h3>
+						</div>	
+						
+						<h4>Personal Information</h4>
+						
+						<div id ="fullName">
+							<label for="lastName" class="label">Last Name:</label>
+							<input name="lastName" type="text" id="lastName" class="required" title="Please type your last name.">
+						
+							<label for="firstName" class="label">First Name:</label>
+							<input name="firstName" type="text" id="firstName" class="required" title="Please type your first name.">
+						
+							<label for="middleInitial" class="label">MI:</label>
+							<input name="middleInitial" type="text" id="middleInitial" title="Please type your middle initial.">
+						</div>
+						
+						<div>
+							<label for="streetAddress" class="label">Street Address:</label>
+							<input name="streetAddress" type="text" id="streetAddress" class="required address" title="Please enter your street address.">
+						
+							<label for="unitNumber" class="label">Unit Number:</label>
+							<input name="unitNumber" type="text" id="unitNumber" title="Please enter your unit number.">
+						</div>
+
+
+						<div id ="cityStateZip">
+							<label for="userCity" class="label">City:</label>
+							<input name="userCity" type="text" id="userCity" class="required city" title="Please enter your city.">
+						
+							<div class= "inline">
+								<label for="userState2" class="label">State:</label>
+								<select name="userState2" id="userState2" class="required state" title="Please choose your State.">
+									<option value="">Choose One</option>
+									<option value="AL">Alabama</option> 
+									<option value="AK">Alaska</option> 
+									<option value="AZ">Arizona</option> 
+									<option value="AR">Arkansas</option> 
+									<option value="CA">California</option> 
+									<option value="CO">Colorado</option> 
+									<option value="CT">Connecticut</option> 
+									<option value="DE">Delaware</option> 
+									<option value="DC">DC</option> 
+									<option value="FL">Florida</option> 
+									<option value="GA">Georgia</option> 
+									<option value="HI">Hawaii</option> 
+									<option value="ID">Idaho</option> 
+									<option value="IL">Illinois</option> 
+									<option value="IN">Indiana</option> 
+									<option value="IA">Iowa</option> 
+									<option value="KS">Kansas</option> 
+									<option value="KY">Kentucky</option> 
+									<option value="LA">Louisiana</option> 
+									<option value="ME">Maine</option> 
+									<option value="MD">Maryland</option> 
+									<option value="MA">Massachusetts</option> 
+									<option value="MI">Michigan</option> 
+									<option value="MN">Minnesota</option> 
+									<option value="MS">Mississippi</option> 
+									<option value="MO">Missouri</option> 
+									<option value="MT">Montana</option> 
+									<option value="NE">Nebraska</option> 
+									<option value="NV">Nevada</option> 
+									<option value="NH">New Hampshire</option> 
+									<option value="NJ">New Jersey</option> 
+									<option value="NM">New Mexico</option> 
+									<option value="NY">New York</option> 
+									<option value="NC">North Carolina</option> 
+									<option value="ND">North Dakota</option> 
+									<option value="OH">Ohio</option> 
+									<option value="OK">Oklahoma</option> 
+									<option value="OR">Oregon</option> 
+									<option value="PA">Pennsylvania</option> 
+									<option value="RI">Rhode Island</option> 
+									<option value="SC">South Carolina</option> 
+									<option value="SD">South Dakota</option> 
+									<option value="TN">Tennessee</option> 
+									<option value="TX">Texas</option> 
+									<option value="UT">Utah</option> 
+									<option value="VT">Vermont</option> 
+									<option value="VA">Virginia</option> 
+									<option value="WA">Washington</option> 
+									<option value="WV">West Virginia</option> 
+									<option value="WI">Wisconsin</option> 
+									<option value="WY">Wyoming</option>		
+								</select>
+							</div>
+						
+							<label for="userZip" class="label">Zip Code:</label>
+							<input name="userZip" type="text" id="userZip" class="required zip" title="Please enter your Zip code.">
+						</div> <!--  end of cityStateZip -->
+
+						<div>
+							<label for="phone" class="label">Phone:</label>
+							<input name="phone" type="text" id="phone" class="required phone" title="Please enter your phone number.">
+						
+							<label for="email" class="label">E-mail:</label>
+							<input name="email" type="text" id="email" class="required phone" title="Please enter your email address.">
+						</div>
+
+						<div>
+							<label for="dateAvailable" class="label">Date Available:</label>
+							<input name="dateAvailable" type="text" id="dateAvailable" class="singleDate"  name="dateAvailable" title="Please type the date using this format: 01/19/2000.">
+						
+							<label for="socSec" class="label">Social Security No:</label>
+							<input name="socSec" type="text" id="socSec"  name="socSec" title="Please enter your Social Security Number.">
+						</div>
+
+						<div>
+							<label for="position" class="label">Position Applied For:</label>
+							<input name="position" type="text" id="position" class="required" name="position" title="Please enter the position applied for.">
+						
+							<label for="salary" class="label">Desired Salary:</label>
+							<input name="salary" type="text" id="salary" class="salary"  name="salary" title="Please enter desired salary.">
+						</div>
+							
+						<div>
+							<label>Are you a citizen of the United Sates?</label>
+							<div id="citizenRadio" class="radButt">
+
+							    <input type="radio" id="yesCitizen" class="required radioButt" name="citizenRadio"/ title="Please indicate if you are a US citizen.">
+							    <label for="yesCitizen" class="label">Yes</label>
+							    <input type="radio" id="noCitizen" name="citizenRadio"  />
+							    <label for="noCitizen" class="label">No</label>
+							</div>
+
+						</div>
+
+						<div id = "authorized">
+							<label>If no, are you authorized to work in the U.S.?</label>
+							<div id="authorizedRadio" class="radButt">
+
+							    <input type="radio" id="yesAuthorized" class="radioButt" name="authorizedRadio" title="Please enter if you are authorized to work." />
+							    <label for="yesAuthorized" class="label">Yes</label>
+							    <input type="radio" id="noAuthorized" name="authorizedRadio"  />
+							    <label for="noAuthorized" class="label">No</label>
+							</div>
+						</div>
+
+						<div>
+							<label>Have you ever worked for this company?</label>
+							<div id="workedRadio" class="radButt">
+
+							    <input type="radio" id="yesWorked" class="required radioButt" name="workedRadio" title="Please indicate if you have worked for this company."/>
+							    <label for="yesWorked" class="label">Yes</label>
+							    <input type="radio" id="noWorked" name="workedRadio"  />
+							    <label for="noWorked" class="label">No</label>
+							</div>
+						</div>
+						
+
+						<div id="rangeWork" class="range">
+							<label for="fromWork" >If yes, from</label>
+							<input type="text" id="fromWork" class="from" name="fromWork" title="Please enter a start date."/>
+							<label for="toWork">to</label>
+							<input type="text" id="toWork" class="to" name="toWork" title="Please enter an end date."/>							
+						</div>
+						
+						<div>
+							<label>Have you ever been convicted of a felony?</label>
+							<div id="felonyRadio" class="radButt">
+							    <input type="radio" id="yesFelony" class="required radioButt" name="felonyRadio" title="Please indicate if you have been convicted of a felony." />
+							    <label for="yesFelony" class="label">Yes</label>
+							    <input type="radio" id="noFelony" name="felonyRadio"  />
+							    <label for="noFelony" class="label">No</label>
+							</div>
+						</div>
+
+						<div id= "felony">
+							<label for="explainFelony" class="label">If yes, please explain:</label><br>
+							<textarea name="explainFelony" id="explainFelony" cols="50" rows="7" title="Please explain the conditions." ></textarea>
+							
+						</div>																		
+					</div> <!-- end tabs-1 / tabForm-->
+				
+					
+					<!-- TAB TWO -->
+
+					<div id="tabs-2" class="tabForm">
+
+						<!-- EDUCATION -->
+
+						<div class="topper">
+							<h3>Education</h3>
+						</div> <!-- end of topper-->
+						
+						<div id="education">
+							<div id= "highSchoolDiv">
+								<h4>High School</h4>
+
+								<div>
+									<label for="highSchool" class="label">Name:</label>
+									<input name="highSchool" type="text" id="highSchool" class="school" title="Please enter your high school.">
+
+									<label for="hsStreetAddress" class="label">Address:</label>
+									<input name="hsStreetAddress" type="text" id="hsStreetAddress" class="schoolAddress" title="Please enter the school's street address.">
+								</div>								
+								
+								<div>
+									<label for="hsCity" class="label">City:</label>
+									<input name="hsCity" type="text" id="hsCity" class="city" title="Please enter the school's city.">
+									
+									<label for="hsState" class="label">State:</label>
+									<select name="hsState" id="hsState" class="state" title="Please enter the school's state."> 
+										<option value="" selected="selected">Select</option> 
+										<option value="AL">Alabama</option> 
+										<option value="AK">Alaska</option> 
+										<option value="AZ">Arizona</option> 
+										<option value="AR">Arkansas</option> 
+										<option value="CA">California</option> 
+										<option value="CO">Colorado</option> 
+										<option value="CT">Connecticut</option> 
+										<option value="DE">Delaware</option> 
+										<option value="DC">DC</option> 
+										<option value="FL">Florida</option> 
+										<option value="GA">Georgia</option> 
+										<option value="HI">Hawaii</option> 
+										<option value="ID">Idaho</option> 
+										<option value="IL">Illinois</option> 
+										<option value="IN">Indiana</option> 
+										<option value="IA">Iowa</option> 
+										<option value="KS">Kansas</option> 
+										<option value="KY">Kentucky</option> 
+										<option value="LA">Louisiana</option> 
+										<option value="ME">Maine</option> 
+										<option value="MD">Maryland</option> 
+										<option value="MA">Massachusetts</option> 
+										<option value="MI">Michigan</option> 
+										<option value="MN">Minnesota</option> 
+										<option value="MS">Mississippi</option> 
+										<option value="MO">Missouri</option> 
+										<option value="MT">Montana</option> 
+										<option value="NE">Nebraska</option> 
+										<option value="NV">Nevada</option> 
+										<option value="NH">New Hampshire</option> 
+										<option value="NJ">New Jersey</option> 
+										<option value="NM">New Mexico</option> 
+										<option value="NY">New York</option> 
+										<option value="NC">North Carolina</option> 
+										<option value="ND">North Dakota</option> 
+										<option value="OH">Ohio</option> 
+										<option value="OK">Oklahoma</option> 
+										<option value="OR">Oregon</option> 
+										<option value="PA">Pennsylvania</option> 
+										<option value="RI">Rhode Island</option> 
+										<option value="SC">South Carolina</option> 
+										<option value="SD">South Dakota</option> 
+										<option value="TN">Tennessee</option> 
+										<option value="TX">Texas</option> 
+										<option value="UT">Utah</option> 
+										<option value="VT">Vermont</option> 
+										<option value="VA">Virginia</option> 
+										<option value="WA">Washington</option> 
+										<option value="WV">West Virginia</option> 
+										<option value="WI">Wisconsin</option> 
+										<option value="WY">Wyoming</option>
+									</select>	
+																								
+									<label for="hsZip" class="label">Zip Code:</label>
+									<input name="hsZip" type="text" id="hsZip" class="zip" title="Please enter your the school's Zip code.">
+								</div>
+								
+
+								<div >
+									<div id="rangeHS" class="leftDiv">
+										<label for="fromHS">From:</label>
+										<input type="text" id="fromHS" class="from" title="Please enter start date." name="fromHS"/>
+										<label for="toHS">To:</label>
+										<input type="text" id="toHS" class="to" title="Please enter graduation date." name="toHS"/>
+									</div>
+									
+									<div class = "rightDiv">
+
+										<label>Did you graduate?</label>
+										<div id="gradHSRadio" class="radButt">
+										    <input type="radio" id="yesGradHS" class="radioButt required" name="radioGradHS" title="Please indicate if you graduated from high school."/>
+										    <label for="yesGradHS" class="label">Yes</label>
+										    <input type="radio" id="noGradHS" name="radioGradHS"  />
+										    <label for="noGradHS" class="label">No</label>
+										</div>
+				
+									</div>
+									<div class= "clear"></div>
+
+								</div>
+								
+								<div class="degree">
+									<label for="hsDiploma" class="label">Diploma:</label>
+									<input name="hsDiploma" type="text" id="hsDiploma"  title="Please enter your diploma.">
+
+								</div>
+								<div> &nbsp;</div>
+
+							</div>  <!-- end highSchool -->
+
+
+							<div id= "collegeDiv">
+								<h4>College</h4>
+								<div>
+									<label for="college" class="label">Name:</label>
+									<input name="college" type="text" id="college" class="school" title="Please enter your college.">
+
+									<label for="collegeStreetAddress" class="label">Address:</label>
+									<input name="collegeStreetAddress" type="text" id="collegeStreetAddress" class="schoolAddress" title="Please enter the school's street address.">
+								</div>	
+
+								<div>
+									<label for="collegeCity" class="label">City:</label>
+									<input name="collegeCity" type="text" id="collegeCity" class="city" title="Please enter the school's city.">
+																							
+									<label for="collegeState" class="label">State:</label>
+									<select name="collegeState" id="collegeState" class="state" title="Please enter the school's state."> 
+										<option value="" selected="selected">Select</option> 
+										<option value="AL">Alabama</option> 
+										<option value="AK">Alaska</option> 
+										<option value="AZ">Arizona</option> 
+										<option value="AR">Arkansas</option> 
+										<option value="CA">California</option> 
+										<option value="CO">Colorado</option> 
+										<option value="CT">Connecticut</option> 
+										<option value="DE">Delaware</option> 
+										<option value="DC">DC</option> 
+										<option value="FL">Florida</option> 
+										<option value="GA">Georgia</option> 
+										<option value="HI">Hawaii</option> 
+										<option value="ID">Idaho</option> 
+										<option value="IL">Illinois</option> 
+										<option value="IN">Indiana</option> 
+										<option value="IA">Iowa</option> 
+										<option value="KS">Kansas</option> 
+										<option value="KY">Kentucky</option> 
+										<option value="LA">Louisiana</option> 
+										<option value="ME">Maine</option> 
+										<option value="MD">Maryland</option> 
+										<option value="MA">Massachusetts</option> 
+										<option value="MI">Michigan</option> 
+										<option value="MN">Minnesota</option> 
+										<option value="MS">Mississippi</option> 
+										<option value="MO">Missouri</option> 
+										<option value="MT">Montana</option> 
+										<option value="NE">Nebraska</option> 
+										<option value="NV">Nevada</option> 
+										<option value="NH">New Hampshire</option> 
+										<option value="NJ">New Jersey</option> 
+										<option value="NM">New Mexico</option> 
+										<option value="NY">New York</option> 
+										<option value="NC">North Carolina</option> 
+										<option value="ND">North Dakota</option> 
+										<option value="OH">Ohio</option> 
+										<option value="OK">Oklahoma</option> 
+										<option value="OR">Oregon</option> 
+										<option value="PA">Pennsylvania</option> 
+										<option value="RI">Rhode Island</option> 
+										<option value="SC">South Carolina</option> 
+										<option value="SD">South Dakota</option> 
+										<option value="TN">Tennessee</option> 
+										<option value="TX">Texas</option> 
+										<option value="UT">Utah</option> 
+										<option value="VT">Vermont</option> 
+										<option value="VA">Virginia</option> 
+										<option value="WA">Washington</option> 
+										<option value="WV">West Virginia</option> 
+										<option value="WI">Wisconsin</option> 
+										<option value="WY">Wyoming</option>
+									</select>
+
+
+									<label for="collegeZip" class="label">Zip Code:</label>
+									<input name="collegeZip" type="text" id="collegeZip" class="zip" title="Please enter your the school's Zip code.">
+								</div>
+								
+
+								<div >
+									<div id="rangeCollege" class="leftDiv">
+										<label for="fromCollege">From:</label>
+										<input type="text" id="fromCollege" class="from" title="Please enter start date." name="fromCollege"/>
+										<label for="toCollege">To:</label>
+										<input type="text" id="toCollege" class="to" title="Please enter graduation date." name="toCollege"/>
+									</div>
+									
+									<div class = "rightDiv">
+										<label>Did you graduate?</label>
+										<div id="gradCollegRadio" class="radButt">
+										    <input type="radio" id="yesGradCollege" class="radioButt" name="radioGradCollege" title="Did you graduate from College?" />
+										    <label for="yesGradCollege" class="label">Yes</label>
+										    <input type="radio" id="noGradCollege" name="radioGradCollege"  />
+										    <label for="noGradCollege" class="label">No</label>
+										</div>			
+									</div>
+
+									<div style='clear:both;'></div>
+								</div>
+
+								<div class="degree">
+									<label for="collegeDegree" class="label">Degree:</label>
+									<input name="collegeDegree" type="text" id="collegeDegree" title="Please enter your degree.">
+								</div>
+								<div> &nbsp;</div>
+
+							</div>  <!-- end college -->
+					
+
+							<div id= "gradDiv">
+								<h4>Graduate School</h4>
+								
+								<div>
+									<label for="grad" class="label">Name:</label>
+									<input name="grad" type="text" id="grad" class="school" title="Please enter your grad school.">
+
+									<label for="gradStreetAddress" class="label">Address:</label>
+									<input name="gradStreetAddress" type="text" id="gradStreetAddress" class="schoolAddress" title="Please enter the school's street address.">
+								</div>								
+								
+								<div>
+									<label for="gradCity" class="label">City:</label>
+									<input name="gradCity" type="text" id="gradCity" class="city" title="Please enter the school's city.">
+								
+									<label for="gradState" class="label">State:</label>
+									<select name="gradState" id="gradState" class="state" title="Please enter the school's state."> 
+										<option value="" selected="selected">Select</option> 
+										<option value="AL">Alabama</option> 
+										<option value="AK">Alaska</option> 
+										<option value="AZ">Arizona</option> 
+										<option value="AR">Arkansas</option> 
+										<option value="CA">California</option> 
+										<option value="CO">Colorado</option> 
+										<option value="CT">Connecticut</option> 
+										<option value="DE">Delaware</option> 
+										<option value="DC">DC</option> 
+										<option value="FL">Florida</option> 
+										<option value="GA">Georgia</option> 
+										<option value="HI">Hawaii</option> 
+										<option value="ID">Idaho</option> 
+										<option value="IL">Illinois</option> 
+										<option value="IN">Indiana</option> 
+										<option value="IA">Iowa</option> 
+										<option value="KS">Kansas</option> 
+										<option value="KY">Kentucky</option> 
+										<option value="LA">Louisiana</option> 
+										<option value="ME">Maine</option> 
+										<option value="MD">Maryland</option> 
+										<option value="MA">Massachusetts</option> 
+										<option value="MI">Michigan</option> 
+										<option value="MN">Minnesota</option> 
+										<option value="MS">Mississippi</option> 
+										<option value="MO">Missouri</option> 
+										<option value="MT">Montana</option> 
+										<option value="NE">Nebraska</option> 
+										<option value="NV">Nevada</option> 
+										<option value="NH">New Hampshire</option> 
+										<option value="NJ">New Jersey</option> 
+										<option value="NM">New Mexico</option> 
+										<option value="NY">New York</option> 
+										<option value="NC">North Carolina</option> 
+										<option value="ND">North Dakota</option> 
+										<option value="OH">Ohio</option> 
+										<option value="OK">Oklahoma</option> 
+										<option value="OR">Oregon</option> 
+										<option value="PA">Pennsylvania</option> 
+										<option value="RI">Rhode Island</option> 
+										<option value="SC">South Carolina</option> 
+										<option value="SD">South Dakota</option> 
+										<option value="TN">Tennessee</option> 
+										<option value="TX">Texas</option> 
+										<option value="UT">Utah</option> 
+										<option value="VT">Vermont</option> 
+										<option value="VA">Virginia</option> 
+										<option value="WA">Washington</option> 
+										<option value="WV">West Virginia</option> 
+										<option value="WI">Wisconsin</option> 
+										<option value="WY">Wyoming</option>
+									</select>
+
+									<label for="gradZip" class="label">Zip Code:</label>
+									<input name="gradZip" type="text" id="gradZip" class="zip" title="Please enter your the school's Zip code.">
+								</div>
+								
+
+								<div>
+									<div id="rangeGrad" class="leftDiv">
+										<label for="fromGrad">From:</label>
+										<input type="text" id="fromGrad" class="from" title="Please enter start date" name="fromGrad"/>
+										
+										<label for="toGrad">To:</label>
+										<input type="text" id="toGrad" class="to" title="Please enter graduation date" name="toGrad"/>
+									</div>
+									
+									<div class = "rightDiv">
+										<label>Did you graduate?</label>
+										<div id="gradGradradio" class="radButt">
+										    <input type="radio" id="yesGradGrad" class="radioButt" name="radioGradGrad" />
+										    <label for="yesGradGrad" class="label">Yes</label>
+										    <input type="radio" id="noGradGrad" name="radioGradGrad"  />
+										    <label for="noGradGrad" class="label">No</label>
+										</div>
+				
+									</div>
+
+									<div style='clear:both;'></div>
+								</div>
+
+								<div class="degree">
+									<label for="gradDegree" class="label">Degree:</label>
+									<input name="gradDegree" type="text" id="gradDegree" title="Please enter your degree.">
+								</div>
+
+							</div>  <!-- end gradDiv -->
+						</div> <!-- end education -->
+
+						<!-- REFERENCES -->
+
+						<div class="topper">
+							<h3>References</h3>
+						</div>
+						
+						<div id="references">
+							<h4>First Reference</h4>
+							<div>
+								<label for="ref1Name" class="label">Full Name:</label>
+								<input name="ref1Name" type="text" id="ref1Name" class="required" title="Please enter your first reference's full name.">
+							
+								<label for="ref1Relat" class="label">Relationship:</label>
+								<input name="ref1Relat" type="text" id="ref1Relat" class="required relationship" title="Please enter the relationship to your first reference.">
+							</div>
+							
+							<div>
+								<label for="ref1Company" class="label">Company:</label>
+								<input name="ref1Company" type="text" id="ref1Company" class="required refCompany" title="Please enter your first reference's company.">
+
+								<label for="ref1Phone" class="label">Phone:</label>
+								<input name="ref1Phone" type="text" id="ref1Phone" class="required phone">
+							</div>
+							
+							<div>
+								<label for="ref1Address" class="label">Address:</label>
+								<input name="ref1Address" type="text" id="ref1Address" class="refAddress required" title="Please enter your first reference's Address.">
+							</div>							
+							<div> &nbsp;</div>
+
+							<h4>Second Reference</h4>
+							<div>
+								<label for="ref2Name" class="label">Full Name:</label>
+								<input name="ref2Name" type="text" id="ref2Name" class="required" title="Please enter your second reference's full name.">
+							
+								<label for="ref2Relat" class="label">Relationship:</label>
+								<input name="ref2Relat" type="text" id="ref2Relat" class="required relationship" title="Please enter the relationship to your second reference.">
+							</div>
+							
+							<div>
+								<label for="ref2Company" class="label">Company:</label>
+								<input name="ref2Company" type="text" id="ref2Company" class="required refCompany" title="Please enter your second reference's company.">
+
+								<label for="ref2Phone" class="label">Phone:</label>
+								<input name="ref2Phone" type="text" id="ref2Phone" class="required phone" title="Please enter your second reference's phone number.">
+							</div>
+							
+							<div>
+								<label for="ref2Address" class="label">Address:</label>
+								<input name="ref2Address" type="text" id="ref2Address" class="refAddress required" title="Please enter your second reference's Address.">
+							</div>
+							<div> &nbsp;</div>
+
+							
+							<h4>Third Reference</h4>
+							<div>
+								<label for="ref3Name" class="label">Full Name:</label>
+								<input name="ref3Name" type="text" id="ref3Name" class="required" title="Please enter your third reference's full name.">
+							
+								<label for="ref3Relat" class="label">Relationship:</label>
+								<input name="ref3Relat" type="text" id="ref3Relat" class="required relationship" title="Please enter the relationship to your third reference.">
+							</div>
+							
+							<div>
+								<label for="ref3Company" class="label">Company:</label>
+								<input name="ref3Company" type="text" id="ref3Company" class="required refCompany" title="Please enter your third reference's company.">
+
+								<label for="ref3Phone" class="label">Phone:</label>
+								<input name="ref3Phone" type="text" id="ref3Phone" class="required phone" title="Please enter your third reference's phone number.">
+							</div>
+							
+							<div>
+								<label for="ref3Address" class="label">Address:</label>
+								<input name="ref3Address" type="text" id="ref3Address" class="refAddress required" title="Please enter your third reference's Address.">
+							</div>							
+						
+						</div> <!-- end of references -->
+					</div> <!-- end tab-2 / tabForm -->
+
+
+					<!-- TAB THREE -->
+				
+					<div id="tabs-3" class="tabForm">
+								
+							<!-- PREVIOUS EMPLOYMENT -->
+																	
+							<div class="topper">
+								<h3>Previous Employment</h3>
+							</div>	
+							
+							<div id="previousEmployment">
+								
+								<div id= "previousCompany1">
+									<h4>Previous Employeer</h4>
+									<div>
+										<label for="comp1" class="label">Company:</label>
+										<input name="comp1" type="text" id="comp1" class="required" title="Please enter the company's name.">
+
+										<label for="comp1Phone" class="label">Phone:</label>
+										<input name="comp1Phone" type="text" id="comp1Phone" class="required phone" title="Please enter the company's phone.">
+									</div>
+									
+									<div>
+										<label for="comp1Address" class="label">Address:</label>
+										<input name="comp1Address" type="text" id="comp1Address" class="required address" title="Please enter the company's address.">
+									
+										<label for="comp1Supervisor" class="label">Supervisor:</label>
+										<input name="comp1Supervisor" type="text" id="comp1Supervisor" class="required supervisor" title="Please enter your Supervisor's name.">
+									</div>	
+
+									<div>
+										<label for="comp1JobTitle" class="label">Job Title:</label>
+										<input name="comp1JobTitle" type="text" id="comp1JobTitle" class="required jobTitle" title="Please enter the Job Title.">
+									</div>
+
+									<div>
+										<label for="comp1SSalary" class="label">Start Salary:</label>
+										<input name="comp1SSalary" type="text" id="comp1SSalary" class="salary"  name="comp1SSalary" title="Please enter starting salary">
+
+										<label for="comp1ESalary" class="label">End Salary:</label>
+										<input name="comp1ESalary" type="text" id="comp1ESalary" class="salary"  name="comp1ESalary" title="Please enter ending salary">
+									</div>	
+
+									<div>
+										<label for="comp1Respons" class="label">Responsibilities:</label>
+										<input name="comp1Respons" type="text" id="comp1Respons" class="required respons" title="Please enter your responsibilities at the company">
+									</div>	
+		
+									<div>
+										<label for="comp1reason" class="label">Reason for Leaving:</label>
+										<input name="comp1reason" type="text" id="comp1reason" class="required reason" title="Please enter your reason for leaving.">
+									</div>
+
+									<div id="rangeComp1" class="range">
+										<label for="fromComp1">From:</label>
+										<input type="text" id="fromComp1" class="required from" name="fromComp1" title="Please enter a start date"/>
+										
+										<label for="toComp1">To:</label>
+										<input type="text" id="toComp1" class="required to" name="toComp1" title="Please enter a end date"/>
+									</div>
+
+									<label>May we contact your previous supervisor?</label>									
+									<div id="comp1Radio" class="radButt">
+									    <input type="radio" id="yesComp1" class="radioButt" name="radioComp1"/>
+									    <label for="yesComp1" class="label">Yes</label>
+									    <input type="radio" id="noComp1" name="radioComp1"  />
+									    <label for="noComp1" class="label">No</label>
+									</div>
+	
+									<div> &nbsp;</div>	
+								</div>  <!-- end previousCompany1 -->
+
+
+								<div id= "previousCompany2">
+									<h4>Previous Employeer</h4>
+									<div>
+										<label for="comp2" class="label">Company:</label>
+										<input name="comp2" type="text" id="comp2" title="Please enter the company's name.">
+
+										<label for="comp2Phone" class="label">Phone:</label>
+										<input name="comp2Phone" type="text" id="comp2Phone" class="phone" title="Please enter the company's phone.">
+									</div>
+									
+									<div>
+										<label for="comp2Address" class="label">Address:</label>
+										<input name="comp2Address" type="text" id="comp2Address" class="address" title="Please enter the company's address.">
+									
+										<label for="comp2Supervisor" class="label">Supervisor:</label>
+										<input name="comp2Supervisor" type="text" id="comp2Supervisor" class="supervisor" title="Please enter your Supervisor's name.">
+									</div>	
+
+									<div>
+										<label for="comp2JobTitle" class="label">Job Title:</label>
+										<input name="comp2JobTitle" type="text" id="comp2JobTitle" class="jobTitle" title="Please enter the Job Title.">
+									</div>
+									
+									<div>
+										<label for="comp2SSalary" class="label">Start Salary:</label>
+										<input name="comp2SSalary" type="text" id="comp2SSalary" class="salary"  name="comp2SSalary" title="Please enter starting salary">
+
+										<label for="comp2ESalary" class="label">End Salary:</label>
+										<input name="comp2ESalary" type="text" id="comp2ESalary" class="salary"  name="comp2ESalary" title="Please enter ending salary">
+									</div>	
+
+									<div>
+										<label for="comp2Respons" class="label">Responsibilities:</label>
+										<input name="comp2Respons" type="text" id="comp2Respons" class="respons" title="Please enter your responsibilities at the company">
+									</div>	
+									
+									<div>
+										<label for="comp2reason" class="label">Reason for Leaving:</label>
+										<input name="comp2reason" type="text" id="comp2reason" class="reason" title="Please enter your reason for leaving.">
+									</div>
+
+									<div id="rangeComp2" class="range">
+										<label for="fromComp2">From:</label>
+										<input type="text" id="fromComp2" class="from" name="fromComp2"/>
+										<label for="toComp2">To:</label>
+										<input type="text" id="toComp2" class="to" name="toComp2"/>
+									</div>
+								
+									<label>May we contact your previous supervisor?</label>									
+									<div id="comp2Radio" class="radButt">
+									    <input type="radio" id="yescomp2" class="radioButt" name="radiocomp2"/>
+									    <label for="yescomp2" class="label">Yes</label>
+									    <input type="radio" id="nocomp2" name="radiocomp2"  />
+									    <label for="nocomp2" class="label">No</label>
+									</div>
+									<div class="clear"> </div>
+
+								</div>  <!-- end previousCompany2 -->
+
+
+							</div> <!-- end previous employment -->
+
+
+							<!-- MILITARY -->
+
+							<div class="topper">
+								<h3>Military Service</h3>
+							</div>
+							
+							<div id="military">
+
+								<label>Have you served in the Military?</label>
+								<div id="milRadio" class="radButt">
+								    <input type="radio" id="yesMil" class="radioButt required" name="radioMil" title="Please indicate if you have served in the Military."/>
+								    <label for="yesMil" class="label">Yes</label>
+								    <input type="radio" id="noMil" name="radioMil"  />
+								    <label for="noMil" class="label">No</label>
+								</div>
+
+								<div id="milContent">									
+									<div>
+										<div class="leftDiv">
+											<label for="milBranch" class="label">Branch:</label>
+											<input name="milBranch" type="text" id="milBranch" title="Please enter your Branch.">
+										</div>
+
+										<div id="rangeMil" class="range rightDiv">											
+											<label for="fromMil">From</label>
+											<input type="text" id="fromMil" class="from" name="fromMil" title="Please enter a start date"/>
+											<label for="toMil">to</label>
+											<input type="text" id="toMil" class="to" name="toMil" title="Please enter a end date"/>		
+										</div>
+									</div>
+
+									<div>
+										<label for="rank" class="label">Rank at Discharge:</label>
+										<input name="rank" type="text" id="rank" title="Please enter your rank at discharge.">
+									</div>	
+
+									<div class="inline">
+										<label for="discharge" class="label">Type of Discharge:</label>
+										<select name="discharge" id="discharge" title="Please choose your type of discharge.">
+											<option value="">Choose One</option>
+											<option value="honerable">Honerable</option>
+											<option value="other">Other</option>		
+										</select>
+									</div>									 		
+
+									<div id= "explainMilitaryDC">
+										<label for="explainDC" class="label">If other than honarable, please explain:</label><br>
+										<textarea name="explainDC" id="explainDC" cols="50" rows="7" title="Please explain" ></textarea>
+									</div>
+									<div>
+									</div>
+								</div> <!-- end of milContent -->								
+							</div> <!-- end of military -->
+
+
+							<!-- DISCLAIMER -->
+
+							<div class="topper">
+								<h3>Disclaimer</h3>
+							</div>
+							
+							<div id="disclaimer">
+								<label>I certify that my answers are ture and complete to the best of my knowledge.</label>
+								<div id="disclaimRadio1" class="radButt">
+									<input type="radio" id="yesDis1" class="radioButt required" name="radioDis1" title ="Please choose yes or no"/>
+									<label for="yesDis1" class="label">Yes</label>
+									<input type="radio" id="noDis1" name="radioDis1"  />
+									<label for="noDis1" class="label">No</label>
+								</div>
+								
+								<br><label>If this application leads to employment, I understand that false or misleading information in my application or interview may result in my release.</label><br>
+								
+								<div id="disclaimRadio2" class="radButt">
+									<input type="radio" id="yesDis2" class="radioButt required"  name="radioDis2" title= "Please choose yes or no"/>
+									<label for="yesDis2" class="label">Yes</label>
+									<input type="radio" id="noDis2" name="radioDis2"  />
+									<label for="noDis2" class="label">No</label>
+								</div>
+												
+								<div class="clear"> &nbsp; </div>
+
+							</div> <!-- end of Disclaimer -->
+
+						<div>
+							<input type="submit" name="submit" id="submit" class="button" value="Submit">
+						</div>
+			
+					</div> <!-- end tab-3 / class tabForm -->
+					
+					<div id= "errorTotal">
+					</div> <!-- end errorTotal -->
+
+				</div> <!-- end tabs -->
+
+
+			
+			</form>
+		
+		</div> <!-- End of Content -->
+
+		<div id="dialog" title="Dialog Title">
+			<p> &nbsp; Andrew Corp. is more than 160 years old. The history of our company can be traced back to Andrew Andrewson's 1847 opening of a single shop on London's Bond Street, selling cats and ready-made kittens. In 1902, Andrew Corp. &amp Co., Ltd. incorporated as a small kitten company in New York City. In 1960, Andrew Corp was the smallest among the six major kitten companies in the United States. By 1983, AC USA had become the largest kitten company in the country. </p> 
+						
+		</div>
+		
+		<div id="footer">
+		</div>  <!-- End of footer -->
+
+	</div> <!--  end of page -->
+</body>
+</html>
+
+
+<!--  FIN  -->
